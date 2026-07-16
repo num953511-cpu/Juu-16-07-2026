@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For You 💖</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: linear-gradient(135deg, #ff758c, #ff7eb3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  width: 90%;
+  max-width: 350px;
+  text-align: center;
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(15px);
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+h2 {
+  color: white;
+}
+
+button {
+  margin-top: 15px;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  border-radius: 20px;
+  background: #ff4d6d;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #ff3355;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+  <img src="photo1.jpg" alt="ความทรงจำแรก">
+  <h2>มีอะไรอยากให้ดู 💖</h2>
+  <button onclick="nextPage()">Next 👉</button>
+</div>
+
+<script>
+function nextPage() {
+  window.location.href = "story.html";
+}
+</script>
+
+</body>
+</html>

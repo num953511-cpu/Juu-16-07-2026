@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Love 💖</title>
+
+<style>
+body {
+  margin:0;
+  font-family:sans-serif;
+  background:linear-gradient(135deg,#ff758c,#ff7eb3);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+  overflow:hidden;
+}
+
+.card {
+  text-align:center;
+  background:white;
+  padding:30px;
+  border-radius:20px;
+}
+
+button {
+  margin-top:20px;
+  padding:12px 20px;
+  border:none;
+  border-radius:20px;
+  background:#ff4d6d;
+  color:white;
+}
+
+/* hearts */
+.heart {
+  position:absolute;
+  animation:float 4s linear forwards;
+}
+@keyframes float {
+  0% {transform:translateY(0);opacity:1;}
+  100% {transform:translateY(-400px);opacity:0;}
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+  <h2>รักเธอมากจริงๆๆๆๆ 💖</h2>
+  <p>อยู่ด้วยกันไปแบบนี้นานๆ เลยนะ</p>
+  <button onclick="love()">กดดู 💌</button>
+</div>
+
+<script>
+function love(){
+  for(let i=0;i<40;i++){
+    let h=document.createElement("div");
+    h.className="heart";
+    h.innerHTML="💖";
+    h.style.left=Math.random()*window.innerWidth+"px";
+    document.body.appendChild(h);
+
+    setTimeout(()=>h.remove(),4000);
+  }
+}
+</script>
+
+</body>
+</html>
